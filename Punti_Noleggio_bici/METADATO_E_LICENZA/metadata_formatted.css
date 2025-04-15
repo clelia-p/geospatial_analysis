@@ -1,0 +1,273 @@
+MD_Metadata {
+	font-family: sans-serif;
+	color: #000;
+	margin: 10px auto;
+	width: 90%;
+	font-size: 100%;
+	line-height: 145%;
+	margin-left: 10px;
+}
+
+MD_Metadata:before {
+	display:block;
+	font-weight: 600;
+	display: block;
+	content: "Metadata";
+	font-size: 1.6em;
+	border-bottom: 1px solid Gray;
+} 
+
+fileIdentifier, 
+language, 
+MD_CharacterSetCode, 
+parentIdentifier, 
+hierarchyLevel, 
+dateStamp,  
+contact, 
+metadataStandardName, 
+metadataStandardVersion,
+citation title, 
+CI_Citation CI_Date,
+presentationForm,
+series CharacterString,
+citedResponsibleParty,
+MD_Identifier,
+series,
+otherCitationDetails,
+abstract,
+descriptiveKeywords,
+spatialRepresentationType,
+MD_Resolution,
+supplementalInformation,
+resourceConstraints,
+EX_Extent EX_GeographicBoundingBox,
+EX_Extent EX_VerticalExtent,
+EX_Extent EX_TemporalExtent,
+DQ_DataQuality level,
+DQ_AbsoluteExternalPositionalAccuracy,
+lineage,
+DQ_ConformanceResult,
+referenceSystemInfo,
+distributionFormat,
+distributorContact, 
+MD_DigitalTransferOptions,
+MD_Distributor URL,
+resourceMaintenance MD_MaintenanceFrequencyCode,
+topicCategory,
+pointOfContact {
+	display: block;
+	margin: 2em 0 0 0;
+}
+
+CharacterString,
+LanguageCode,
+MD_CharacterSetCode,
+MD_ScopeCode,
+CI_PresentationFormCode
+ {display: block;}
+
+list {
+  display : block;
+  margin-left: 20px;
+  list-style-type : disc;
+}
+
+item {
+  display : list-item;
+}
+
+Date, dateType{
+  margin-left: 50px;
+  display: list-item;
+}
+ 
+CI_ResponsibleParty organisationName, phone, address, onlineResource, role {
+  margin-left: 50px;
+  display: list-item;
+}
+
+descriptiveKeywords keyword, descriptiveKeywords title {
+  margin-left: 50px;
+  display: list-item;
+}
+
+MD_Resolution denominator Integer, MD_Resolution distance Distance {
+  margin-left: 50px;
+  display: list-item;
+}
+
+EX_Extent EX_GeographicBoundingBox westBoundLongitude, 
+EX_Extent EX_GeographicBoundingBox eastBoundLongitude,
+EX_Extent EX_GeographicBoundingBox southBoundLatitude,
+EX_Extent EX_GeographicBoundingBox northBoundLatitude{
+  margin-left: 50px;
+  display: list-item;
+}
+
+EX_Extent EX_VerticalExtent minimumValue,
+EX_Extent EX_VerticalExtent maximumValue{
+  margin-left: 50px;
+  display: list-item;
+}
+
+
+EX_Extent EX_TemporalExtent beginPosition,
+EX_Extent EX_TemporalExtent endPosition{
+  margin-left: 50px;
+  display: list-item;
+}
+
+DQ_AbsoluteExternalPositionalAccuracy BaseUnit,
+DQ_AbsoluteExternalPositionalAccuracy Record{
+  margin-left: 50px;
+  display: list-item;
+}
+
+DQ_ConformanceResult title,
+DQ_ConformanceResult explanation{
+  margin-left: 50px;
+  display: list-item;
+}
+
+DQ_ConformanceResult Date,
+DQ_ConformanceResult dateType{
+  display: none;
+/*   border: solid #E9E9E9; */
+}
+
+referenceSystemInfo code,
+referenceSystemInfo codeSpace{
+  margin-left: 50px;
+  display: list-item;
+  
+}
+
+distributionFormat name,
+distributionFormat version{
+  margin-left: 50px;
+  display: list-item;
+}
+
+topicCategory MD_TopicCategoryCode{
+  margin-left: 50px;
+  display: list-item;
+}
+
+abstract, statement {
+	white-space: pre-line;
+}
+
+fileIdentifier:before {display:block; font-weight: 600; content: "2.1.1.1 Identificatore: ";}
+
+MD_Metadata > language:before {display:block; font-weight: 600; content: "2.1.1.2 Lingua Dei Metadati: ";}
+
+MD_Metadata > characterSet > MD_CharacterSetCode:before {display:block; font-weight: 600; content: "2.1.1.3 Set Dei Caratteri Del Metadato: ";}
+
+parentIdentifier:before {display:block; font-weight: 600; content: "2.1.1.4 Id File Precedente: ";}
+
+hierarchyLevel:before {display:block; font-weight: 600; content: "2.1.1.5 Livello Gerarchico: ";}
+
+contact > CI_ResponsibleParty:before {display:block; font-weight: 600; content: "2.1.1.6 Responsabile dei Metadati: ";}
+  organisationName:before {display:block; font-weight: 600;   display : inline; content: "Nome Organizzazione: ";}
+  phone:before {display:block; font-weight: 600;   display : inline; content: "Telefono: ";}
+  address:before {display:block; font-weight: 600;  display : inline; content: "Email: "; }
+  onlineResource:before {display:block; font-weight: 600; display : inline; content: "Sito Web: "; }
+  role:before {display:block; font-weight: 600; display : inline; content: "Ruolo: "; }
+  
+  
+MD_Metadata > dateStamp:before {display:block; font-weight: 600; content: "2.1.1.7 Data Dei Metadati: ";}
+
+MD_Metadata > metadataStandardName:before {display:block; font-weight: 600; content: "2.1.1.8 Nome Dello Standard: ";}
+
+MD_Metadata > metadataStandardVersion:before {display:block; font-weight: 600; content: "2.1.1.9 Versione Dello Standard: ";}
+
+MD_DataIdentification>citation title:before {display:block; font-weight: 600; content: "2.1.2.1 Titolo: ";}
+
+MD_DataIdentification CI_Citation CI_Date:before {display:block; font-weight: 600; content: "2.1.2.2 Data: ";}
+MD_DataIdentification CI_Citation CI_Date Date:before {display:block; display : inline; content: "Data: ";}
+MD_DataIdentification CI_Citation CI_Date dateType:before {display:block; display : inline; content: "Tipo Data:";}
+
+presentationForm:before {display:block; font-weight: 600; content: "2.1.1.1 Formato di presentazione: ";}
+
+citedResponsibleParty > CI_ResponsibleParty:before {display:block; font-weight: 600; content: "2.1.2.4 Responsabile: ";}
+
+MD_Identifier > code:before {display:block; font-weight: 600; content: "2.1.2.5 Identificatore: ";}
+
+series CharacterString:before {display:block; font-weight: 600; content: "2.1.2.6 ID livello superiore: ";}
+
+otherCitationDetails:before {display:block; font-weight: 600; content: "2.1.2.7 Altri dettagli: ";}
+
+abstract:before {display:block; font-weight: 600; content: "2.1.2.8 Descrizione: ";}
+
+descriptiveKeywords:before {display:block; font-weight: 600; content: "2.1.2.9 Parole Chiave: ";}
+descriptiveKeywords keyword:before{display : inline; content: "Parola Chiave: ";}
+descriptiveKeywords title:before{display : inline; content: "Vocabolario: ";}
+
+MD_Metadata MD_DataIdentification characterSet > MD_CharacterSetCode:before {display:block; font-weight: 600; content: "2.1.1.3 Set dei Caratteri: ";}
+
+spatialRepresentationType :before {display:block; font-weight: 600; content: "2.1.2.12 Tipo di rappresentazione spaziale: ";}
+
+MD_Resolution denominator:before {display:block; font-weight: 600; content: "2.1.2.13 Risoluzione spaziale: ";}
+MD_Resolution denominator Integer:before {display:block; font-weight: 600; display : inline; content: "Scala Equivalente: ";}
+MD_Resolution denominator Integer:after {display : inline; content: " (denominatore)";}
+MD_Resolution distance:before {display:block; font-weight: 600; content: "2.1.2.13 Risoluzione spaziale: ";}
+MD_Resolution distance Distance:before {display:block; font-weight: 600; display : inline; content: "Distanza: ";}
+
+MD_DataIdentification language:before {display:block; font-weight: 600; content: "2.1.2.15 Lingua: ";}
+
+supplementalInformation:before {display:block; font-weight: 600; content: "2.1.2.16 Informazioni Supplementari: "; } 
+
+resourceConstraints useLimitation:before {display:block; font-weight: 600; content: "2.1.3.1 Limitazione d'uso: "; }
+resourceConstraints accessConstraints:before {display:block; font-weight: 600; content: "2.1.3.2 Vincoli d'accesso: "; } 
+resourceConstraints useConstraints:before {display:block; font-weight: 600; content: "2.1.3.3 Vincoli di fruibilità: "; } 
+resourceConstraints otherConstraints:before {display:block; font-weight: 600; content: "2.1.3.4: Altri vincoli"; } 
+resourceConstraints MD_SecurityConstraints:before {display:block; font-weight: 600; content: "2.1.3.5: Vincoli di sicurezza"; } 
+
+EX_Extent EX_GeographicBoundingBox:before {display:block; font-weight: 600; content: "2.1.4.1 Localizzazione geografica: "; }
+EX_Extent EX_GeographicBoundingBox westBoundLongitude:before {display:block; font-weight: 600; display : inline; content: "Longitudine Ovest: ";}
+EX_Extent EX_GeographicBoundingBox eastBoundLongitude:before {display:block; font-weight: 600; display : inline; content: "Longitudine Est: ";}
+EX_Extent EX_GeographicBoundingBox southBoundLatitude:before {display:block; font-weight: 600; display : inline; content: "Latitudine Sud: ";}
+EX_Extent EX_GeographicBoundingBox northBoundLatitude:before {display:block; font-weight: 600; display : inline; content: "Latitudine Nord: ";}
+
+EX_Extent EX_VerticalExtent:before {display:block; font-weight: 600; content: "2.1.4.2 Estensione verticale: "; }
+EX_Extent EX_VerticalExtent minimumValue:before {display:block; font-weight: 600; display : inline; content: "Valore Minimo: ";}
+EX_Extent EX_VerticalExtent maximumValue:before {display:block; font-weight: 600; display : inline; content: "Valore Massimo: ";}
+
+EX_Extent EX_TemporalExtent:before {display:block; font-weight: 600; content: "2.1.4.3 Estensione temporale: "; }
+EX_Extent EX_TemporalExtent beginPosition:before {display:block; font-weight: 600; display : inline; content: "Data inizio: ";}
+EX_Extent EX_TemporalExtent endPosition:before {display:block; font-weight: 600; display : inline; content: "Data fine: ";}
+
+DQ_DataQuality level:before {display:block; font-weight: 600; content: "2.1.5.1 Livello di qualità: "; }
+
+DQ_AbsoluteExternalPositionalAccuracy:before {display:block; font-weight: 600; content: "2.1.5.2 Accuratezza Posizionale: "; }
+DQ_AbsoluteExternalPositionalAccuracy BaseUnit:before {display:block; font-weight: 600; display : inline; content: "Unità di misura: ";}
+DQ_AbsoluteExternalPositionalAccuracy Record:before {display:block; font-weight: 600; display : inline; content: "Valore: ";}
+
+lineage:before {display:block; font-weight: 600; content: "2.1.5.3 Genealogia: "; }
+
+DQ_ConformanceResult:before {display:block; font-weight: 600; content: "2.1.5.4 Conformità: specifiche "; }
+DQ_ConformanceResult title:before {display:block; font-weight: 600; display : inline; content: "Titolo: ";}
+DQ_ConformanceResult Date:before {display:block; font-weight: 600; display : inline; content: "Data: ";}
+DQ_ConformanceResult dateType:before {display:block; font-weight: 600; display : inline; content: "Tipo data: ";}
+DQ_ConformanceResult explanation:before {display:block; font-weight: 600; display : inline; content: "Spiegazione: ";}
+
+pass:before {display:block; font-weight: 600; content: "2.1.5.5 Conformità: grado "; }
+
+referenceSystemInfo:before {display:block; font-weight: 600; content: "2.1.6.1 Sistema di riferimento spaziale: "; margin-top:2em; }
+referenceSystemInfo code:before {display:block; font-weight: 600; display : inline; content: "Codice EPSG: ";}
+referenceSystemInfo codeSpace:before {display:block; font-weight: 600; display : inline; content: "URL del registro EPSG: ";}
+
+distributionFormat:before {display:block; font-weight: 600; content: "2.1.7.1 Formato di distribuzione: "; }
+distributionFormat name:before {display:block; font-weight: 600; display : inline; content: "Nome formato: ";}
+distributionFormat version:before {display:block; font-weight: 600; display : inline; content: "Versione formato: ";}
+
+distributorContact> CI_ResponsibleParty:before {display:block; font-weight: 600; content: "2.1.7.2 Distributore: ";}
+
+MD_DigitalTransferOptions URL:before {display:block; font-weight: 600; content: "2.1.7.3 Risorsa on-line: ";}
+
+resourceMaintenance MD_MaintenanceFrequencyCode:before {display:block; font-weight: 600; content: "2.1.8.1 Frequenza di aggiornamento: ";}
+
+topicCategory:before {display:block; font-weight: 600; content: "2.1.2.15 Categoria tematica: ";}
+topicCategory MD_TopicCategoryCode:before {display:block; font-weight: 600; display : inline; content: "Categoria: ";}
+
+pointOfContact > CI_ResponsibleParty:before {display:block; font-weight: 600; content: "2.1.2.10 Punto di contatto: ";}

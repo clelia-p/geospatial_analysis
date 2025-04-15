@@ -1,0 +1,4 @@
+===Layer WMS associato al dataset===
+
+Url di accesso al servizio: http://tms.comune.fi.it/tiles/service/wms?request=GetCapabilities&service=WMS&tiled=TRUE&version=1.3.0
+Nome del layer: limiti_amministrativi:quartieri
